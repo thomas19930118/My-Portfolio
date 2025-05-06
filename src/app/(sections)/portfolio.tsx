@@ -23,12 +23,6 @@ import { cn } from "@/lib/utils";
 
 const PROJECT_TYPES = Object.keys(PORTFOLIO) as ProjectType[];
 
-const fadeInUp = {
-  initial: { y: 20, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
-  transition: { duration: 0.5 }
-};
-
 export default function Portfolio() {
   return (
     <section id="portfolio" className="mx-auto max-w-7xl px-4 pt-28">

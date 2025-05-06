@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <NavigationMenu className="fixed left-0 top-0 w-full max-w-full border-b bg-background/80 p-2 shadow backdrop-blur sm:left-1/2 sm:top-5 sm:max-w-max sm:-translate-x-1/2 sm:rounded-lg sm:border">
       <NavigationMenuList className="flex-wrap sm:flex-nowrap">
-        {NAV_LINKS.map(({ name, path }, i) => (
+        {NAV_LINKS.map(({ name, path }) => (
           <NavigationMenuItem className="" key={path}>
             <Link
               active={false}

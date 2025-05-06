@@ -71,7 +71,7 @@ export default function HeroDescription() {
             <Highlight className="text-nowrap">
               {" "}{YEARS_OF_EXPERIENCE} years
             </Highlight>
-            ' expertise in developing end-to-end full-stack products powered by advanced AI. 
+            &apos; expertise in developing end-to-end full-stack products powered by advanced AI. 
             Solutions are crafted to be innovative, user-centric, and scalable, 
             effectively bridging technology and real-world needs.
           </span>

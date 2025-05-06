@@ -29,7 +29,7 @@ type Portfolios = {
   [key in ProjectType]: PortfolioItem[];
 };
 
-let PORTFOLIO: Portfolios = {
+const PORTFOLIO: Portfolios = {
   [PROJECT_TYPES.AI_ML]: [
     {
       title: "Medical Document OCR System",

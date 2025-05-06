@@ -12,7 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
-import { Button } from "../ui/button";
+
 import { EMAIL, GITHUB_URL, LINKED_IN_URL, UPWORK_URL, WHATSAPP_URL } from "@/data/personal";
 import SimpleTooltip from "../ui/simple-tooltip";
 import { motion } from "framer-motion";
@@ -61,7 +61,7 @@ export default function ContactButton({ children }: { children: ReactNode }) {
         <DialogHeader className="mb-2">
           <DialogTitle className="text-center">Contact Me</DialogTitle>
           <DialogDescription className="text-center">
-            Let's connect and discuss your project
+            Let&apos;s connect and discuss your project
           </DialogDescription>
         </DialogHeader>
 

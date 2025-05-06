@@ -8,8 +8,6 @@ import { Button } from "@/components/ui/button";
 import { CV_NAME, GITHUB_URL, LINKED_IN_URL } from "@/data/personal";
 import { toast } from "sonner";
 
-const AnimatedButton = motion(Button);
-
 const hoverAnimationProps = {
   transition: {
     type: "spring",
