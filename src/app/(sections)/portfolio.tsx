@@ -77,7 +77,7 @@ export default function Portfolio() {
 }
 
 function PortfolioCard({
-  portfolioItem: { url, description, imageUrl, technologies, title },
+  portfolioItem: { description, imageUrl, technologies, title },
   isLastCard = false,
   index
 }: {
@@ -92,48 +92,41 @@ function PortfolioCard({
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
-      <a 
-        className="block" 
-        target="_blank" 
-        href={url}
-        rel="noopener noreferrer"
+      <Card
+        className={cn(
+          "ml-4 w-[350px] transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1",
+          isLastCard && "mr-4",
+        )}
       >
-        <Card
-          className={cn(
-            "ml-4 w-[350px] transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1",
-            isLastCard && "mr-4",
-          )}
-        >
-          <CardHeader className="space-y-2">
-            <CardTitle className="text-xl font-bold">{title}</CardTitle>
-            <CardDescription className="text-sm line-clamp-2">
-              {description}
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="mx-0 px-0">
-            <div className="relative h-[200px] w-full overflow-hidden">
-              <Image 
-                priority={true} 
-                src={imageUrl} 
-                alt={title} 
-                quality={100}
-                className="object-cover"
-                fill
-              />
-            </div>
-          </CardContent>
-          <CardFooter className="flex-wrap gap-2">
-            {technologies.map((technology) => (
-              <Badge 
-                key={technology}
-                className="bg-primary/10 text-primary hover:bg-primary/20"
-              >
-                {technology}
-              </Badge>
-            ))}
-          </CardFooter>
-        </Card>
-      </a>
+        <CardHeader className="space-y-2">
+          <CardTitle className="text-xl font-bold">{title}</CardTitle>
+          <CardDescription className="text-sm line-clamp-2">
+            {description}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="mx-0 px-0">
+          <div className="relative h-[200px] w-full overflow-hidden">
+            <Image 
+              priority={true} 
+              src={imageUrl} 
+              alt={title} 
+              quality={100}
+              className="object-cover"
+              fill
+            />
+          </div>
+        </CardContent>
+        <CardFooter className="flex-wrap gap-2">
+          {technologies.map((technology) => (
+            <Badge 
+              key={technology}
+              className="bg-primary/10 text-primary hover:bg-primary/20"
+            >
+              {technology}
+            </Badge>
+          ))}
+        </CardFooter>
+      </Card>
     </motion.div>
   );
 }

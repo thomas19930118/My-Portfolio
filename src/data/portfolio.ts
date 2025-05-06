@@ -22,7 +22,6 @@ export type PortfolioItem = {
   description: string;
   technologies: string[];
   imageUrl: StaticImageData;
-  url: string;
 };
 
 type Portfolios = {
@@ -43,7 +42,6 @@ const PORTFOLIO: Portfolios = {
         "Python"
       ],
       imageUrl: medicalOcr,
-      url: "/projects/medical-ocr"
     },
     {
       title: "Healthcare Chatbot",
@@ -56,7 +54,6 @@ const PORTFOLIO: Portfolios = {
         "AWS CloudFormation"
       ],
       imageUrl: healthchatbot,
-      url: "/projects/healthcare-chatbot"
     },
     {
       title: "Retail Analytics Engine",
@@ -69,7 +66,6 @@ const PORTFOLIO: Portfolios = {
         "Python"
       ],
       imageUrl: retailAnalytics,
-      url: "/projects/retail-analytics"
     }
   ],
 
@@ -86,7 +82,6 @@ const PORTFOLIO: Portfolios = {
         "Apache Kafka"
       ],
       imageUrl: patientPlatform,
-      url: "/projects/patient-platform"
     },
     {
       title: "Retail Dashboard System",
@@ -100,7 +95,6 @@ const PORTFOLIO: Portfolios = {
         "D3.js"
       ],
       imageUrl: retailDashboard,
-      url: "/projects/retail-dashboard"
     }
   ],
 
@@ -116,7 +110,6 @@ const PORTFOLIO: Portfolios = {
         "AWS CodePipeline"
       ],
       imageUrl: mlOps,
-      url: "/projects/mlops-pipeline"
     },
     {
       title: "Microservices Architecture",
@@ -130,7 +123,6 @@ const PORTFOLIO: Portfolios = {
         "Grafana"
       ],
       imageUrl: microservices,
-      url: "/projects/microservices"
     }
   ]
 } as const;

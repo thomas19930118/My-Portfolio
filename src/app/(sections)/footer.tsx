@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer className="flex flex-col gap-2 border-t p-4 text-center shadow sm:p-8">
-      <Muted>&copy; {currentYear} Usama. All rights reserved.</Muted>
+      <Muted>&copy; {currentYear} Thomas. All rights reserved.</Muted>
       <Muted>
         <strong>Tech Stack: </strong>
         <span>

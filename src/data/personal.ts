@@ -5,11 +5,11 @@ export const PROFESSION2 = "AI Expert";
 export const YEARS_OF_EXPERIENCE = calculateYearsOfExperience();
 
 // Contact information
-export const EMAIL = "prograsec.usama@gmail.com";
-export const LINKED_IN_URL = "https://www.linkedin.com/in/usama365/";
-export const GITHUB_URL = "https://github.com/usama-365";
-export const UPWORK_URL = "https://www.upwork.com/your-profile-url";
-export const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=YOUR_PHONE_NUMBER";
+export const EMAIL = "thomasj1993011@gmail.com";
+export const LINKED_IN_URL = "https://www.linkedin.com";
+export const GITHUB_URL = "https://github.com/thomas19930118";
+export const UPWORK_URL = "https://www.upwork.com";
+export const WHATSAPP_URL = "https://api.whatsapp.com";
 
 // Assets
 export const CV_NAME = "resume.pdf";

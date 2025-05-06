@@ -15,9 +15,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Usama | Personal Portfolio",
+  title: "Thomas | Personal Portfolio",
   description:
-    "Meet Usama, a Full Stack Web Engineer & Designer. Dive into secure, modern, and innovative web solutions. Connect for a tech journey together!",
+    "Meet Thomas, a Full Stack Web Engineer & Designer. Dive into secure, modern, and innovative web solutions. Connect for a tech journey together!",
 };
 
 export default function RootLayout({
