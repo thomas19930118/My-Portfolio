@@ -8,6 +8,7 @@ import ThemeToggleButton from "@/components/ui/theme-toggle-button";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/app/(sections)/footer";
 import { Toaster } from "sonner";
+import Chatbot from "@/components/chatbot/chat-bot";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
           <Footer />
           <ThemeToggleButton />
           <Toaster />
+          <Chatbot />
         </ThemeProvider>
       </body>
     </html>
