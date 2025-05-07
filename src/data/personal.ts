@@ -5,7 +5,7 @@ export const PROFESSION2 = "AI Expert";
 export const YEARS_OF_EXPERIENCE = calculateYearsOfExperience();
 
 // Contact information
-export const EMAIL = "thomasj1993011@gmail.com";
+export const EMAIL = "thomasj19930118@gmail.com";
 export const LINKED_IN_URL = "https://www.linkedin.com";
 export const GITHUB_URL = "https://github.com/thomas19930118";
 export const UPWORK_URL = "https://www.upwork.com";
